@@ -21,11 +21,20 @@ const list = (
 type TitleProps = {
     title: string
     text?: string // (если ставиться ? - значит это не обязательный параметр)
+    num: number;
 }
-const Title = (props: TitleProps) => 
-    <h1>
-        {props.text} {props.title}
-    </h1>
+const Title = (props: TitleProps) => {
+    console.log(props)
+    return (
+        <>
+        <h1>
+            {props.text} {props.title}
+        </h1>
+        <div>{props.num}</div>
+        </>
+    )
+}
+    
 
 const Title1 = () =>  {
     let a = 0;
@@ -46,8 +55,8 @@ const Title1 = () =>  {
 function App() {
     return (
         <div className="App">
-            <Title title="App.js"/>
-            <Title title="Test.js"/>
+            <Title title="App.js" text = "Hi" num={10}/>
+            <Title title="Test.js" text = "Hello" num={20}/>
             <Title1 />
             {list}
         </div> )
