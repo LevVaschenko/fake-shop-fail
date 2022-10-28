@@ -4,9 +4,11 @@ import React from 'react'
 type Props = {}
 
 const Home = (props: Props) => {
-    return <>
-        <ProductsList />
-    </>
+    return (
+        <>
+            <ProductsList />
+        </>
+    )
 }
 
 export default Home
