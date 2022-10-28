@@ -1,5 +1,5 @@
-import ProductsList from 'components/Products/ProductsList'
-import React from 'react'
+import ProductsList from "components/Products/ProductsList"
+import React from "react"
 
 type Props = {}
 
