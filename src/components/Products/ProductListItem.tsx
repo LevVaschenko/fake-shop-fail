@@ -11,13 +11,17 @@ type Props = {
 
 const ProductListItem = (props: Props) => {
     return (
-        <Card>
+        <Card className="product">
             <CardContent>
                 <h4>{props.name}</h4>
-                <p>{props.descriprion}</p>
-                <div>Type: {props.type}</div>
-                <div>Size: {props.size} GB</div>
-                <div>Price: {props.price} $</div>
+                <p className="product-description">{props.descriprion}</p>
+                <div className="product-features">
+                    <span>Type: </span> {props.type}
+                </div>
+                <div className="product-features">
+                    <span>Size: </span> {props.size} GB
+                </div>
+                <div className="product-price">Price: {props.price} $</div>
             </CardContent>
             <CardActions className="button-wrap">
                 <Button variant="contained">Add to cart</Button>

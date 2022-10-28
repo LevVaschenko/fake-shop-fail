@@ -3,3 +3,24 @@
     justify-content: center;
     margin-bottom: 20px;
 }
+
+.product {
+    h4 {
+        font-size: 24px;
+    }
+    
+    .product-description {
+        font-size: 19px;
+    }
+
+    .product-price {
+        font-size: 20px;
+    }
+
+    .product-features {
+        font-size: 18px;
+        span {
+            font-weight: bold;
+        }
+    }
+}
